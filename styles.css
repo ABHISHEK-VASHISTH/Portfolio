@@ -1,7 +1,6 @@
-/* Google Fonts */
+/*google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,100;1,200;1,400&display=swap');
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,21 +8,21 @@
     scroll-behavior: smooth;
     list-style: none;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; 
 }
-
-.show {
+.show{
     position: absolute;
     right: 0;
     width: 100%;
     min-height: 100vh;
-    padding: 50px; /* Adjust padding for smaller screens */
+    padding: 100px;
+    /* display: flex; */
+    justify-content: space-between ;
     background-color: black;
     color: aliceblue;
     z-index: 2;
 }
-
-.show video {
+.show video{
     position: absolute;
     top: 0;
     left: 0;
@@ -33,105 +32,79 @@
     opacity: 0.8;
 }
 
-:root {
+:root{
     --main-color: #fe5b3d;
     --second-color: #ffac38;
     --text-color: white;
-    --gradient: linear-gradient(#fe5b3d, #ffac38);
+    --gradient: linear-gradient(#fe5b3d,#ffac38);
 }
 
-.text {
+.text{
     position: relative;
     z-index: 10;
-}
 
-.show img {
-    width: 100%; /* Make image responsive */
-    max-width: 400px; /* Set a maximum width for larger screens */
-    height: auto; /* Maintain aspect ratio */
+}
+.show img{
+    margin-left: -80px;
+    width: 400px;
+    height: 400px;
     border-radius: 60%;
 }
-
-.name {
-    font-size: 3em; /* Adjust font size for smaller screens */
+.name{
+    font-size: 5em;
     font-weight: 800;
-    margin-left: 20px; /* Adjust margin for smaller screens */
-    margin-top: -20px; /* Adjust margin for smaller screens */
-}
+    margin-left: 350px;
+    margin-top: -280px;
 
-.tag {
-    font-size: 16px; /* Adjust font size for smaller screens */
-    margin-left: 10px; /* Adjust margin for smaller screens */
 }
-
-.about {
+.tag{
+    font-size: 20px;
+    margin-left: 300px;
+}
+.about{
     position: absolute;
     z-index: 10;
     color: black;
-    margin-top: 20px; /* Adjust margin for smaller screens */
+    margin-top: 650px;
     background-color: aqua;
-    margin: 2rem 0 1rem;
+    margin: 40.2rem 0 1rem;
     letter-spacing: 1px;
 }
-
-.about h1 {
+.about h1{
     align-items: center;
 }
-
-.para {
+.para{
     background-color: aqua;
     position: relative;
-    font-size: medium; /* Adjust font size for smaller screens */
+    font-size: large;
     margin: 0.5rem 0 1.4rem;
     color: black;
 }
+.resume img{
+    margin-top: 50px;
+    position: relative;
+    z-index: 10;
+    margin-left: 400px;
+    width: 60px;
+    height: 60px;
 
-.resume img,
-.github img,
-.linked-in img {
-    width: 30px; /* Adjust logo size for smaller screens */
-    height: 30px; /* Adjust logo size for smaller screens */
-    margin-top: 10px; /* Adjust margin for smaller screens */
-    margin-left: 20px; /* Adjust margin for smaller screens */
 }
+.github img{
+    margin-top: -80px;
+    position: relative;
+    z-index: 10;
+    margin-left: 550px;
+    width: 60px;
+    height: 60px;
 
-@media screen and (min-width: 768px) {
-    /* Apply styles for larger screens */
-    .show {
-        padding: 100px;
-    }
 
-    .show img {
-        max-width: 400px;
-    }
+}
+.linked-in img{
+    margin-top: -130px;
+    position: relative;
+    z-index: 10;
+    margin-left: 700px;
+    width: 60px;
+    height: 60px;
 
-    .name {
-        font-size: 5em;
-        margin-left: 350px;
-        margin-top: -280px;
-    }
-
-    .tag {
-        font-size: 20px;
-        margin-left: 300px;
-    }
-
-    .about {
-        margin-top: 650px;
-    }
-
-    .resume img {
-        margin-top: 50px;
-        margin-left: 400px;
-    }
-
-    .github img {
-        margin-top: -80px;
-        margin-left: 550px;
-    }
-
-    .linked-in img {
-        margin-top: -130px;
-        margin-left: 700px;
-    }
 }
