@@ -16,7 +16,6 @@
     width: 100%;
     min-height: 100vh;
     padding: 100px;
-    /* display: flex; */
     justify-content: space-between ;
     background-color: black;
     color: aliceblue;
@@ -73,6 +72,7 @@
 .about h1{
     align-items: center;
 }
+
 .para{
     background-color: aqua;
     position: relative;
@@ -104,4 +104,23 @@
     width: 60px;
     height: 60px;
 
+}
+.blinking-text {
+    z-index: 10;
+    position: relative;
+    right: 290px;
+    font-family: sans-serif;
+    font-size: 24px;
+    animation: blink 2s infinite;
+}
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+.blinking-text:hover {
+    animation: none; 
 }
